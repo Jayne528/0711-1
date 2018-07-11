@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: Microsoft JhengHei;
+  min-width: 1000px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none; }
+
+input {
+  outline: 0;
+  border: 0;
+  border-radius: 0; }
+
+html {
+  background: #2B3D53; }
+
+body {
+  position: relative; }
+
+.background {
+  position: absolute;
+  top: 0;
+  background: #2B3D53;
+  width: 100%;
+  padding-bottom: 100vh;
+  z-index: 1; }
+
+.login {
+  position: relative;
+  top: 0;
+  z-index: 999;
+  width: 50%;
+  margin: 0 auto 5% auto; }
+  .login li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    text-align: center; }
+    .login li.logo {
+      background: url(../img/logo.png) no-repeat bottom;
+      background-size: 100%;
+      width: 50%;
+      padding: 5% 0 50% 0;
+      margin: 0 auto; }
+    .login li.input_area {
+      position: relative;
+      width: 40%;
+      margin: 0 auto;
+      padding: 3% 0; }
+      .login li.input_area input {
+        background: transparent;
+        color: #fff;
+        font-size: 14px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8% 10%;
+        border-bottom: 1px solid #fff; }
+        .login li.input_area input::-webkit-input-placeholder {
+          color: #fff;
+          text-align: center; }
+        .login li.input_area input:-ms-input-placeholder {
+          color: #fff;
+          text-align: center; }
+        .login li.input_area input::-ms-input-placeholder {
+          color: #fff;
+          text-align: center; }
+        .login li.input_area input::placeholder {
+          color: #fff;
+          text-align: center; }
+      .login li.input_area .icon {
+        position: absolute;
+        width: 8%;
+        padding-bottom: 8%;
+        left: 0%; }
+        .login li.input_area .icon-login {
+          top: 25%;
+          background: url(../img/user.png) no-repeat;
+          background-size: 100%; }
+        .login li.input_area .icon-password {
+          bottom: 25%;
+          background: url(../img/lock.png) no-repeat;
+          background-size: 100%; }
+    .login li.button {
+      width: 13%;
+      margin: 0 auto;
+      font-size: 0; }
+      .login li.button button {
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        background: url(../img/login.png) no-repeat center;
+        background-size: 40%;
+        width: 100%;
+        padding-bottom: 100%;
+        border-radius: 50%;
+        background-color: #009A9A;
+        cursor: pointer;
+        outline: 0;
+        border: 0; }
+        .login li.button button:hover {
+          -webkit-box-shadow: 0 0 10px #0091E5;
+          box-shadow: 0 0 10px #0091E5;
+          background-color: #0091E5;
+          background-size: 50%;
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+    .login li a {
+      text-decoration: none;
+      color: #fff;
+      padding-top: 5%;
+      display: inline-block;
+      width: 12%;
+      margin: 0 auto; }
+
+.aside_bar {
+  position: absolute;
+  z-index: 999;
+  width: 8%;
+  top: 5%;
+  right: 3%;
+  padding: 3.5% 0;
+  border-radius: 100px;
+  background: transparent;
+  border: 2px solid #fff; }
+  .aside_bar ul {
+    width: 80%;
+    margin: 0 auto; }
+    .aside_bar ul li {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      padding: 50%;
+      margin: 0% 0% 20% 0%;
+      cursor: pointer; }
+      .aside_bar ul li:nth-last-of-type(1) {
+        margin-bottom: 0; }
+      .aside_bar ul li:hover {
+        -webkit-transform: translateX(-90%) scale(1.8, 1.8);
+        -ms-transform: translateX(-90%) scale(1.8, 1.8);
+        transform: translateX(-90%) scale(1.8, 1.8);
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+        .aside_bar ul li:hover + li {
+          -webkit-transform: translateX(-40%) scale(1.2, 1.2);
+          -ms-transform: translateX(-40%) scale(1.2, 1.2);
+          transform: translateX(-40%) scale(1.2, 1.2);
+          -webkit-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s; }
+      .aside_bar ul li.fb {
+        background: url(../img/facebook.png) no-repeat center; }
+      .aside_bar ul li.twitter {
+        background: url(../img/twitter.png) no-repeat center; }
+      .aside_bar ul li.skype {
+        background: url(../img/skype.png) no-repeat center; }
+      .aside_bar ul li.instagram {
+        background: url(../img/instagram.png) no-repeat center; }
+      .aside_bar ul li.youtube {
+        background: url(../img/youtube.png) no-repeat center; }
+
+@media screen and (max-width: 1000px) {
+  .login {
+    width: 100%; }
+  .aside_bar {
+    width: 10%; } }
